@@ -17,9 +17,9 @@
 
     <tbody>
     <tr th:each="car : ${cars}">
-        <td th:text="${car.model}">Model</td>
-        <td th:text="${car.color}">Color</td>
-        <td th:text="${car.year}">Year</td>
+        <td th:text="${car.getModel}">Model</td>
+        <td th:text="${car.getColor}">Color</td>
+        <td th:text="${car.getYear}">Year</td>
     </tr>
     </tbody>
 </table>
