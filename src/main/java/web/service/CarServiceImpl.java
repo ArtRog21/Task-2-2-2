@@ -21,6 +21,9 @@ public class CarServiceImpl implements CarService{
 
     @Override
     public List<Car> findCars(int count) {
+        if (count >= 6) {
+            allCars();
+        }
         return carDao.findCars(count);
     }
 }
