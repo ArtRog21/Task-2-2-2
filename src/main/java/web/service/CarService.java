@@ -7,5 +7,5 @@ public interface CarService {
 
     List<Car> allCars();
 
-    List<Car> findCars(int count);
+    List<Car> findCars(Integer count);
 }

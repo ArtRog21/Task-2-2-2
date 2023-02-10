@@ -20,9 +20,9 @@ public class CarServiceImpl implements CarService{
     }
 
     @Override
-    public List<Car> findCars(int count) {
-        if (count >= 6) {
-            allCars();
+    public List<Car> findCars(Integer count) {
+        if (count == null || count > 5 || count < 1) {
+            return allCars();
         }
         return carDao.findCars(count);
     }
